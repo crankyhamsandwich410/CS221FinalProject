@@ -1,0 +1,35 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    font-size: 250%;
+}
+
+p {
+    color: #444;
+    font-size: 150%;
+}
+
+button {
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 1%;
+    font-size: 150%;
+}
+
+#Rock {
+    background-color: #4CAF50; /* Green */
+}
+#Scissors {
+    background-color: #504AFA; /* Green */
+}
+#Paper {
+    background-color:#F24242 /* Green */
+}

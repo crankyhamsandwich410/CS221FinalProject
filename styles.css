@@ -24,12 +24,8 @@ button {
     font-size: 150%;
 }
 
-#Rock {
-    background-color: #4CAF50; /* Green */
-}
-#Scissors {
-    background-color: #504AFA; /* Green */
-}
-#Paper {
-    background-color:#F24242 /* Green */
+.slideImage {
+    position: absolute;
+    opacity: 0;
+    transition:opacity 0.5s linear;
 }

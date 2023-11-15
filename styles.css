@@ -5,6 +5,13 @@
 
 body {
     background-color: aliceblue;
+    margin: 0px;
+}
+
+nav {
+    background-color: #868686;
+    margin: 0px;
+    padding: 2%;
 }
 
 h1 {
@@ -24,8 +31,21 @@ button {
     font-size: 150%;
 }
 
-.slideImage {
-    position: absolute;
-    opacity: 0;
-    transition:opacity 0.5s linear;
+#slideDiv {
+    position: relative;
+    background-image: url('https://www.w3schools.com/howto/img_5terre.jpg');
+    transition:background-image 0.5s linear;
+    margin: 0px;
+    width: 100%;
+    background-size: cover;
+    z-index: -1;
+    padding-top: 50%;
 }
+
+.slideText {
+    margin: 0px;
+    color: white;
+    text-align: left;
+    vertical-align: bottom;
+}
+

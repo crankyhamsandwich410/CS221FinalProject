@@ -1,8 +1,21 @@
-* {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+@font-face {
+    font-family: "Parisienne" ;
+    src: url("Assets/Parisienne.ttf") format('truetype');
 }
 
+@font-face {
+    font-family: "Open-Sans" ;
+    src: url("Assets/OpenSans.ttf") format('truetype');
+}
+
+* {
+    font-family: Open-Sans ;
+}
+
+
+section {
+     text-align: center;
+}
 body {
     background-color: aliceblue;
     margin: 0px;
@@ -10,12 +23,18 @@ body {
 
 nav {
     margin: 0px;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
     padding-top: 1%;
+    text-align: center;
+}
+
+a {
+    text-decoration:dashed;
 }
 
 h1 {
     font-size: 250%;
+    font-family: Parisienne;
 }
 
 p {
@@ -32,7 +51,7 @@ button {
 }
 
 header {
-    background-color: #868686;
+    background-color: #e7eded;
     position:fixed;
     width: 100%;
 }
@@ -44,6 +63,16 @@ header {
     color: white;
     text-align: left;
     vertical-align: bottom;
+}
+
+.navLink {
+    text-decoration: none;
+    font-size: 1.5em;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+    color: black;
+    font-weight: bold;
 }
 
 #slideDiv {
@@ -62,6 +91,21 @@ header {
 #logo {
     width: 3em;
     height: 3em;
+    padding-left: 48%;
     text-align: left;
     padding-top: .5%;
+    text-align: center;
+}
+
+#left-squigle {
+    width: 45%;
+    height: 3em;
+    position:fixed;
+}
+
+#right-squigle {
+    width: 45%;
+    height: 3em;
+    padding-left: 55%;
+    position:fixed;
 }

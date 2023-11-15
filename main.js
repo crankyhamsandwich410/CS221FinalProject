@@ -32,7 +32,6 @@ function showSlides(n) {
     let slide = document.getElementById("slideDiv");
     slide.style.backgroundImage = images[slideIndex];
 
-    console.log(images[slideIndex])
     sleep(SLIDE_WAIT_IN_SECONDS * 1000).then(() => { 
         slideIndex += 1;
         showSlides(slideIndex)

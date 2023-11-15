@@ -1,21 +1,11 @@
 let slideIndex = 1;
 
-const SLIDE_WAIT_IN_SECONDS = 1.5 
+const SLIDE_WAIT_IN_SECONDS = 6 
 
 const images = [
-    "url('Assets/louis-hansel-tLbGQ1YazV8-unsplash.jpg')",
-    "url('Assets/louis-hansel-VhqBh21uz0k-unsplash.jpg')",
-    "url('Assets/orkun-orcan-epQ32Sf0_XQ-unsplash.jpg')",
-    "url('Assets/paul-griffin-WWST6E8LxeE-unsplash.jpg')",
-    "url('Assets/sebastian-schuppik-H7xTpvBjJS4-unsplash.jpg')",
-    "url('Assets/toa-heftiba-PSzZSuQsoNU-unsplash.jpg')",
-    "url('Assets/urban-gyllstrom-MaWMfm-HCqQ-unsplash.jpg')",
-    "url('Assets/alexandra-tran-fWfRv-qdlUU-unsplash.jpg')",
-    "url('Assets/casey-lee-awj7sRviVXo-unsplash.jpg')",
-    "url('Assets/ivan-stern-LOLSb7m6XkU-unsplash.jpg')",
-    "url('Assets/justus-menke-62XLglIrTJc-unsplash.jpg')",
-    "url('Assets/karol-chomka-YY-phoTAZjw-unsplash.jpg')",
-    "url('Assets/louis-hansel-HF16IxB_tO4-unsplash.jpg')"
+    "url('https://www.w3schools.com/howto/img_woods.jpg')",
+    "url('https://www.w3schools.com/howto/img_5terre.jpg')",
+    "url('https://www.w3schools.com/howto/img_lights.jpg')",
 ]
 
 // Wait function that returns a callback
@@ -38,11 +28,29 @@ function showSlides(n) {
     });
 }
 
+//TEST*****
+var today = new Date();
+var dd = today.getDate()+1;
+var mm = today.getMonth()+1; //January is 0 so need to add 1 to make it 1!
+var yyyy = today.getFullYear();
+if(dd<10){
+  dd='0'+dd
+} 
+if(mm<10){
+  mm='0'+mm
+} 
+
+today = yyyy+'-'+mm+'-'+dd;
+document.getElementById("datefield").setAttribute("min", today);
+
 
 
 
 window.onload=function() {
-    showSlides(slideIndex)
+    sleep(SLIDE_WAIT_IN_SECONDS * 1000).then(() => { 
+        slideIndex += 1;
+        showSlides(slideIndex)
+    });
 }
 
 

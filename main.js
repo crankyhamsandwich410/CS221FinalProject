@@ -10,7 +10,7 @@ function sleep(ms) {
 // Recursive function that renders the slide at the slide index
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
+  let slides = document.getElementsByClassName("slideImage");
   if (n > slides.length) {
     slideIndex = 1
   }

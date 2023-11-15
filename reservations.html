@@ -2,17 +2,46 @@
 <html>
     <head>
         <title>Le Poubelle | Reservations</title>
-        <script src="main.js"></script>
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-        <h1>Reservations</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
             <a href="reservations.html">Reservations</a>
         </nav>
-        
+        <section id="revForm">
+            <form>
+                <h1 id="revTitle">Make your reservation here!</h1>
+                <p>Reservations may only be made from 5pm-8pm and are first come, first serve.</p>
+                <p>Reservation Name<br><input type="TEXT" size="20" maxlength="50" /></p>
+                <p>Number of Party Members<br><input type="TEXT" size="8" maxlength="2" /></p>
+                <p>Email Address<br><input type="TEXT" size="30" maxlength="320" /></p>
+                <p>Phone Number<br><input type="TEXT" size="15" maxlength="15" /></p>
+                <p>Select A Date & Time</p>
+                <input id="datefield" type='date'>
+                <select id="timeList" name="TIMES">
+                    <option>5:00 PM</option>
+                    <option>5:15 PM</option>
+                    <option>5:30 PM</option>
+                    <option>5:45 PM</option>
+                    <option>6:00 PM</option>
+                    <option>6:15 PM</option>
+                    <option>6:30 PM</option>
+                    <option>6:45 PM</option>
+                    <option>7:00 PM</option>
+                    <option>7:15 PM</option>
+                    <option>7:30 PM</option>
+                    <option>7:45 PM</option>
+                    <option>8:00 PM</option>
+                </select>
+                <br><br>
+                
+                <input id="subButton" type="submit" value="click here to submit" />
+
+                <script src="main.js"></script>
+           </form>
+        </section>
     </body>
 </html>

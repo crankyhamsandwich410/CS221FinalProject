@@ -3,33 +3,37 @@
 <html lang = en>
 
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>La Poubelle | Quiz</title>
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-       <!-- Creates a container that holds my quiz and the questions from js -->
+        <div class = "quiz-body">
+       <!-- Creates a container that holds my quiz and the questions from js.-->
         <div class="quiz-container">
-            <div class="title"><h1>What Should I Eat Tonight?</h1></div>
-            <div id="question" class="question"></div>
-            <label class="option">
+            <div class="quiz-title"><h2>What Should I Eat Tonight?</h2></div>
+            <img id="quiz-photo" src="https://images.unsplash.com/photo-1516600164266-f3b8166ae679?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div id="question" class="question"> </div>
+            <label class="quiz-option">
                 <input type="radio" name="foodOption" value="1" />
                 <span class="option1"></span>
             </label>
-            <label class="option">
+            <label class="quiz-option">
                 <input type="radio" name="foodOption" value="2" />
                 <span class="option2"></span>
             </label>
-            <label class="option">
+            <label class="quiz-option">
                 <input type="radio" name="foodOption" value="3" />
                 <span class="option3"></span>
             </label>
-            <label class="option">
+            <label class="quiz-option">
                 <input type="radio" name="foodOption" value="4" />
                 <span class="option4"></span>
             </label>
+            <br>
             <!-- Creats buttons -->
-            <div class="controls">
+            <div class="buttons">
                 <button class="next">Next</button>
             </div>
         </div>
@@ -38,6 +42,7 @@
     
         </div>
 <!-- Links my js page to html-->
-        <script src="main.js"></script>
+        <script src="result.js"></script>
+        </div>
     </body>
 </html>

@@ -19,7 +19,6 @@ section {
 body {
     background-color: #0A384D;
     margin: 0px;
-    color: #FFFCD9;
 }
 
 nav {
@@ -39,7 +38,7 @@ h1 {
 }
 
 p {
-    color: #444;
+    color: #FFFCD9;
     font-size: 150%;
 }
 

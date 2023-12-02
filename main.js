@@ -1,3 +1,4 @@
+function resDate(){
 let slideIndex = 1;
 
 const SLIDE_WAIT_IN_SECONDS = 6 
@@ -52,6 +53,9 @@ window.onload=function() {
         showSlides(slideIndex)
     });
 }
+}
+
+function createQuiz(){
 
 //This segment of code allows for questions to be asked with the answers appearing with totals in order to return a result.
 const questions = [
@@ -219,6 +223,10 @@ const questions = [
   nextButton.addEventListener('click', loadNextQuestion);
   result.addEventListener('click',restartQuiz);
 
+}
+
+createQuiz();
+resDate();
 
 
 

@@ -229,6 +229,4 @@ createQuiz();
 resDate();
 
 
-
-
  

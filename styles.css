@@ -1,16 +1,16 @@
-@font-face {
+/* @font-face {
     font-family: "Parisienne" ;
     src: url("Assets/Parisienne.ttf") format('truetype');
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: "Open-Sans" ;
     src: url("Assets/OpenSans.ttf") format('truetype');
-}
+} */
 
-* {
+/* * {
     font-family: Open-Sans ;
-}
+} */
 
 
 section {

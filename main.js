@@ -223,8 +223,5 @@ const questions = [
 
 }
 
-createQuiz();
-resDate();
-
 
  

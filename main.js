@@ -28,7 +28,13 @@ function showSlides(n) {
         showSlides(slideIndex)
     });
 }
-
+window.onload=function() {
+    sleep(SLIDE_WAIT_IN_SECONDS * 1000).then(() => { 
+        slideIndex += 1;
+        showSlides(slideIndex)
+    });
+} 
+    
 //TEST*****
 var today = new Date();
 var dd = today.getDate()+1;
@@ -43,16 +49,7 @@ if(mm<10){
 
 today = yyyy+'-'+mm+'-'+dd;
 document.getElementById("datefield").setAttribute("min", today);
-
-
-
-
-window.onload=function() {
-    sleep(SLIDE_WAIT_IN_SECONDS * 1000).then(() => { 
-        slideIndex += 1;
-        showSlides(slideIndex)
-    });
-}
+    
 }
 
 function createQuiz(){

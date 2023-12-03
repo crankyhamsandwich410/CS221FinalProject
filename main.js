@@ -1,4 +1,4 @@
-function resDate(){
+
 let slideIndex = 1;
 
 const SLIDE_WAIT_IN_SECONDS = 6 
@@ -34,7 +34,8 @@ window.onload=function() {
         showSlides(slideIndex)
     });
 } 
-    
+
+function resDate(){
 //TEST*****
 var today = new Date();
 var dd = today.getDate()+1;

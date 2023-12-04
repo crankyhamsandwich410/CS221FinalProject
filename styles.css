@@ -68,7 +68,7 @@ header {
 .navLink {
     text-decoration: none;
     font-size: 1.5em;
-    padding-left: 3%;
+    /* padding-top: 10%; */
     padding-right: 3%;
     text-align: center;
     color: black;
@@ -89,12 +89,14 @@ header {
 }
 
 #logo {
-    width: 3em;
-    height: 3em;
-    padding-left: 48%;
-    text-align: left;
+    width: 5em;
+    height: 5em;
+    padding-left: 3%;
+    /* text-align: left; */
     padding-top: .5%;
-    text-align: center;
+    padding-bottom: .5%;
+    float: left;
+    /* text-align: center; */
 }
 
 #left-squigle {

@@ -1,191 +1,200 @@
 @font-face {
-    font-family: "Parisienne" ;
-    src: url("Assets/Parisienne.ttf") format('truetype');
+  font-family: "Parisienne" ;
+  src: url("Assets/Parisienne.ttf") format('truetype');
 }
 
 @font-face {
-    font-family: "Open-Sans" ;
-    src: url("Assets/OpenSans.ttf") format('truetype');
+  font-family: "Open-Sans" ;
+  src: url("Assets/OpenSans.ttf") format('truetype');
 }
 
 * {
-    font-family: Open-Sans ;
+  font-family: Open-Sans ;
 }
 
 
 section {
-  text-align: center;
-  padding: 0px;
+text-align: center;
+padding: 0px;
 }
 
 body {
- background-color: aliceblue;
- margin: 0px;
+background-color: aliceblue;
+margin: 0px;
 }
 
 nav {
- margin: 0px;
- padding-bottom: 1%;
- padding-top: 1%;
- text-align: center;
+margin: 0px;
+padding-bottom: 1%;
+padding-top: 1%;
+text-align: center;
 }
 
 a {
- text-decoration:dashed;
+text-decoration:dashed;
 }
 
 h1 {
- font-size: 400%;
- font-family: Parisienne;
+font-size: 400%;
+font-family: Parisienne;
 }
 
 p {
- color: #444;
- font-size: 150%;
+color: #444;
+font-size: 150%;
 }
 
 button {
- border: none;
- text-decoration: none;
- text-align: center;
- padding: 1%;
- font-size: 150%;
+border: none;
+text-decoration: none;
+text-align: center;
+padding: 1%;
+font-size: 150%;
 }
 
 header {
- background-color: #e7eded;
- position:fixed;
- width: 100%;
+background-color: #e7eded;
+position:fixed;
+width: 100%;
 }
 footer {
-  background-color: #dadfdf;
-  font-size: 50%;
-  margin: 0px;
-  padding: 1%;
+background-color: #dadfdf;
+font-size: 50%;
+margin: 0px;
+padding: 1%;
 }
 
 
 .sectionInsideDiv{
-  width: 80%;
-  margin-left: 10%;
+width: 80%;
+margin-left: 10%;
 }
 
 .reviewSection {
-  background-color: #e7eded;
+background-color: #e7eded;
 }
 
 .review {
-  background-color: #dfe5e5;
+background-color: #dfe5e5;
 }
 
 
 .slideText {
- margin: 0px;
- color: white;
- text-align: left;
- vertical-align: bottom;
+margin: 0px;
+color: white;
+text-align: left;
+vertical-align: bottom;
 }
 
 .navLink {
- text-decoration: none;
- font-size: 1.5em;
- /* padding-top: 10%; */
- padding-right: 3%;
- text-align: center;
- color: black;
- font-weight: bold;
+text-decoration: none;
+font-size: 1.5em;
+/* padding-top: 10%; */
+padding-right: 3%;
+text-align: center;
+color: black;
+font-weight: bold;
 }
 
 #slideDiv {
- position: relative;
- background-image: url('Assets/louis-hansel-UtcOhVC-3VU-unsplash.jpg');
- transition:background-image 0.5s linear;
- margin: 0px;
- width: 100%;
- background-size: cover;
- z-index: -1;
- padding-top: 35%;
- padding-bottom: 2%;
- padding-left: 2%;
+position: relative;
+background-image: url('Assets/louis-hansel-UtcOhVC-3VU-unsplash.jpg');
+transition:background-image 0.5s linear;
+margin: 0px;
+width: 100%;
+background-size: cover;
+z-index: -1;
+padding-top: 35%;
+padding-bottom: 2%;
+padding-left: 2%;
 }
 
 #logo {
- width: 5em;
- height: 5em;
- padding-left: 3%;
- /* text-align: left; */
- padding-top: .5%;
- padding-bottom: .5%;
- float: left;
- /* text-align: center; */
+width: 5em;
+height: 5em;
+padding-left: 3%;
+/* text-align: left; */
+padding-top: .5%;
+padding-bottom: .5%;
+float: left;
+/* text-align: center; */
 }
 
 #left-squigle {
- width: 45%;
- height: 3em;
- position:fixed;
+width: 45%;
+height: 3em;
+position:fixed;
 }
 
 #right-squigle {
- width: 45%;
- height: 3em;
- padding-left: 55%;
- position:fixed;
+width: 45%;
+height: 3em;
+padding-left: 55%;
+position:fixed;
+}
+
+#menuPageText{
+  text-align: center;
+}
+
+#menuDownload{
+  color: #444;
+  font-size: 118%;
 }
 
 #dinnerMenuImg{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 100%;
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 100%;
+}
 
 #wineMenuImg{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 100%;
 }
 
 .quiz-body{
- background-color: #0A384D;
- width: auto;
- height: 768px;
- padding: 15px;
- margin-top: 35px;
+background-color: #0A384D;
+width: auto;
+height: 768px;
+padding: 15px;
+margin-top: 35px;
 }
 
 .quiz-container{
- display: flex;
- flex-direction: column;
- font-size: x-large;
- justify-content: center;
- align-items: center;
- text-align: center;
- margin: auto;
- background-color: #FFFCD9;
- width: 80%;
- height: 80%;
+display: flex;
+flex-direction: column;
+font-size: x-large;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin: auto;
+background-color: #FFFCD9;
+width: 80%;
+height: 80%;
 }
 
 #quiz-photo{
- width: 40%;
- height: auto;
- padding: 10px;
+width: 40%;
+height: auto;
+padding: 10px;
 }
 
 .next{
- background-color: #0A384D;
- border: none;
- color: white;
- padding: 15px 32px;
- text-align: center;
- text-decoration: none;
- display: inline-block;
- font-size: 16px;
- margin: 20px;
+background-color: #0A384D;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 20px;
 }
 
 .restart{
@@ -224,35 +233,29 @@ width: 450px;
 }
 
 #ChefImage {
-  width: 50%;
+width: 50%;
 }
 
 #quiz-photo{
-  width: 250px;
-  height: auto;
- }
+width: 250px;
+height: auto;
+}
 
 @media screen and (max-width: 768px) {
 .quiz-container{
- padding: 10px;
- width: auto;
- height: auto;
- margin-top: -5px;
+padding: 10px;
+width: auto;
+height: auto;
+margin-top: -5px;
 }
-
-
-
 
 .quiz-result img{
- width: 250px;
- height: auto;
+width: 250px;
+height: auto;
 }
 .quiz-result{
- width: auto;
- height: auto;
- padding: 20px;
-}
-body{
- background-color:#0A384D;
+width: auto;
+height: auto;
+padding: 20px;
 }
 }

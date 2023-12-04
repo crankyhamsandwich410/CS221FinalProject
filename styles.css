@@ -161,7 +161,7 @@ background-color: #0A384D;
 width: auto;
 height: 768px;
 padding: 15px;
-/* margin-top: 35px; */
+margin-top: 20px;
 }
 
 .quiz-container{
@@ -234,12 +234,38 @@ height: auto;
 padding: 10px;
 }
 
+#revFormBack{
+  background-color: #0A384D;
+  padding-top: 5%;
+}
+
+#revForm{
+  background-color:#FFFCD9;
+  padding-top: .5%;
+  padding-bottom: 2%;
+  margin: 5% 10% 5% 10%;
+  font-size: 100%;
+}
+
+#subButton{
+  background-color: #0A384D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px;
+  border-radius: 5%;
+}
+
 @media screen and (max-width: 768px) {
 .quiz-container{
 padding: 10px;
 width: auto;
 height: auto;
-margin-top: 80px;
+margin-top: 20px;
 }
 
 .quiz-result img{

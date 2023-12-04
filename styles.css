@@ -133,6 +133,22 @@ footer {
  position:fixed;
 }
 
+#dinnerMenuImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100%;
+  }
+
+#wineMenuImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100%;
+}
+
 .quiz-body{
  background-color: #0A384D;
  width: auto;

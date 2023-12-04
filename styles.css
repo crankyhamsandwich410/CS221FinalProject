@@ -208,7 +208,7 @@ padding-top: 0;
 .quiz-result{
 display: flex;
 flex-direction: column;
-font-size: x-large;
+font-size: large;
 justify-content: center;
 align-items: center;
 text-align: center;

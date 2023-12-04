@@ -26,7 +26,7 @@ margin: 0px;
 nav {
 margin: 0px;
 padding-bottom: 1%;
-padding-top: 1%;
+padding-top: .5%;
 text-align: center;
 }
 
@@ -57,6 +57,7 @@ background-color: #e7eded;
 position:fixed;
 width: 100%;
 }
+
 footer {
 background-color: #dadfdf;
 font-size: 50%;
@@ -64,6 +65,16 @@ margin: 0px;
 padding: 1%;
 }
 
+#restName{
+  font-size: 250%;
+  font-family: "Parisienne";
+  text-align: center;
+  padding-right: 5%;
+  margin-top: .5%;
+  margin-bottom: -.5%;
+  font-weight: bold;
+  color: black;
+}
 
 .sectionInsideDiv{
 width: 80%;
@@ -114,23 +125,10 @@ width: 5em;
 height: 5em;
 padding-left: 3%;
 /* text-align: left; */
-padding-top: .5%;
-padding-bottom: .5%;
+padding-top: .7%;
+/* padding-bottom: .3%; */
 float: left;
 /* text-align: center; */
-}
-
-#left-squigle {
-width: 45%;
-height: 3em;
-position:fixed;
-}
-
-#right-squigle {
-width: 45%;
-height: 3em;
-padding-left: 55%;
-position:fixed;
 }
 
 #menuPageText{
@@ -163,7 +161,7 @@ background-color: #0A384D;
 width: auto;
 height: 768px;
 padding: 15px;
-margin-top: 35px;
+/* margin-top: 35px; */
 }
 
 .quiz-container{
@@ -177,12 +175,6 @@ margin: auto;
 background-color: #FFFCD9;
 width: 80%;
 height: 80%;
-}
-
-#quiz-photo{
-width: 40%;
-height: auto;
-padding: 10px;
 }
 
 .next{
@@ -237,8 +229,9 @@ width: 50%;
 }
 
 #quiz-photo{
-width: 250px;
+width: 400px;
 height: auto;
+padding: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -246,7 +239,7 @@ height: auto;
 padding: 10px;
 width: auto;
 height: auto;
-margin-top: -5px;
+margin-top: 80px;
 }
 
 .quiz-result img{
@@ -258,4 +251,9 @@ width: auto;
 height: auto;
 padding: 20px;
 }
+
+#quiz-photo{
+  width: 250px;
+  height: auto;
+  }
 }

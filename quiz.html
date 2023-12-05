@@ -12,7 +12,7 @@
     <body>
         <!-- Header section (all pages need this block) -->
         <header>
-             <a href="index.html"><img id="logo" src="Assets/LP Logo 2.jpg"></a>
+             <a href="index.html"><img id="logo" src="Assets/LP-Logo-2.jpg"></a>
              <p id="restName">Le Poubelle</p>
             <nav>
                 <a class="navLink" href="index.html">Home</a>
@@ -21,12 +21,15 @@
             </nav>  
         </header>
         <br><br><br><br>
-        </header>
+        <!-- Allows for the quiz background to be a color other than what is selected for
+        other pages along with formatting.-->
         <div class = "quiz-body">
             <!-- Creates a container that holds the quiz and the questions from js.-->
             <div class="quiz-container">
                 <div class="quiz-title"><h2>What Should I Eat Tonight?</h2></div>
                 <img id="quiz-photo" src="https://images.unsplash.com/photo-1516600164266-f3b8166ae679?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <!-- Creates the questions for the quiz and receives its variables from js file. Determines what
+                kind of questions are being used.-->
                 <div id="question" class="question"> </div>
                 <label class="quiz-option">
                     <input type="radio" name="foodOption" value="1" />
@@ -44,15 +47,16 @@
                     <input type="radio" name="foodOption" value="4" />
                     <span class="option4"></span>
                 </label>
-                <!-- Creates buttons -->
+                <!-- Creates buttons to move throughout the quiz.-->
                 <div class="buttons">
                     <button class="next">Next</button>
                 </div>
             </div>
             <div class="result"></div>
 
-            <!-- Links my js page to html -->
+            <!-- Links the js page to html -->
             <script src="main.js"></script>
+            <!-- Calls the quiz funtion on from js to run only on this page. -->
             <script>createQuiz();</script>
         </div>
     </body>

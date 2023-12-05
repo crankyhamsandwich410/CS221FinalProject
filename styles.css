@@ -269,7 +269,7 @@ text-align: center; */
 .quiz-result{
   display: flex;
   flex-direction: column;
-  font-size: x-large;
+  font-size: large;
   justify-content: center;
   align-items: center;
   text-align: center;

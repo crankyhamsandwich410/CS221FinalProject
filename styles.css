@@ -146,8 +146,6 @@ footer {
 background-color: #e7eded; 
 margin: 0;
 padding: 10%;
-/* justify-content: center;
-text-align: center; */
 }
 
 .indexMenu{
@@ -165,7 +163,7 @@ text-align: center; */
   background-image: url('Assets/louis-hansel-UtcOhVC-3VU-unsplash.jpg');
   transition:background-image 0.5s linear;
   margin: 0px;
-  width: 100%;
+  width: 98%;
   background-size: cover;
   z-index: -1;
   padding-top: 45%;

@@ -47,7 +47,7 @@ window.onload=function() {
 } 
 
 function resDate(){
-//TEST*****
+//Keeps customers from choosing a reservation date for a day that has already passed
 var today = new Date();
 var dd = today.getDate()+1;
 var mm = today.getMonth()+1; //January is 0 so need to add 1 to make it 1!
@@ -64,8 +64,23 @@ document.getElementById("datefield").setAttribute("min", today);
     
 }
 
-function createQuiz(){
+function validateForm() {
+  //This function will be used to make sure that all fields in the reservation form are filled out before submission
+  let n = document.forms["reservationForm"]["fname"].value;
+  let p = document.forms["reservationForm"]["partyNum"].value;
+  let e = document.forms["reservationForm"]["email"].value;
+  let f = document.forms["reservationForm"]["phoneNum"].value;
+  if (n == "" || p == "" || e == "" || f == "") {
+    alert("All fields must be filled out.");
+    return false;
+  }
+  else{
+    alert("Your reservation has been succesfully submitted!");
+    return true;
+  }
+}
 
+function createQuiz(){
 //This segment of code allows for questions to be asked with the answers appearing with totals in order to return a result.
 const questions = [
     {

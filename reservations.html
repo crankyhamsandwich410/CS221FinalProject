@@ -17,12 +17,15 @@
                 <a class="navLink" href="menu.html">Menu</a>
             </nav>  
         </header>
+        
         <br>
-        <div id="revFormBack">
+        <!-- This is the beginning of the reservation form. This form will allow the customer to enter their name, number of party members,
+        email address, and phone number, and will allow them to select a valid date and time. -->
+        <div id="resFormBack">
             <br>
-            <section id="revForm">
+            <section id="resForm">
                 <form name="reservationForm" onsubmit="return validateForm()" method="post">
-                    <h1 id="revTitle">Make your reservation here!</h1>
+                    <h1 id="resTitle">Make your reservation here!</h1>
                     <p>Reservations may only be made from 5pm-8pm and are first come, first serve.</p>
                     <p>Reservation Name<br><input type="TEXT" size="20" maxlength="50" name="fname"/></p>
                     <p>Number of Party Members<br><input type="TEXT" size="8" maxlength="2" name="partyNum" /></p>
@@ -47,11 +50,13 @@
                     </select>
                     <br><br>
                     
-                    <input type="submit" value="Submit">
+                    <!-- Once the user clicks this button, the form will be validated and return either an error or a completion message -->
+                    <input id="subButton" type="submit" value="Submit">
 
                     <script src="main.js"></script>
+                    <!-- This script call will make sure that the resDate function is called at the time that the website is viewed -->
                     <script>resDate();</script>
-            </form>
+                </form>
             </section>
             <br>
         </div>

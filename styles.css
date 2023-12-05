@@ -334,6 +334,10 @@ text-align: center; */
   margin-top: 20px;
   }
 
+  .quiz-body{
+    margin-top:-30px;
+  }
+
   .quiz-result img{
     width: 250px;
     height: auto;
@@ -347,6 +351,14 @@ text-align: center; */
   #quiz-photo{
     width: 250px;
     height: auto;
+  }
+
+  .review {
+    font-size: small;
+  }
+
+  header{
+    font-size: x-small;
   }
 
 }

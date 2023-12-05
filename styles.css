@@ -123,14 +123,6 @@ footer {
   background-color: #dfe5e5;
 }
 
-/* FIND ME
-.slideText {
-  margin: 0px;
-  color: white;
-  text-align: left;
-  vertical-align: bottom;
-} */
-
 .indexGrid{
   grid-auto-rows: 400px;
   grid-template-columns: repeat(auto-fit, minmax(400px, 400px));

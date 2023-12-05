@@ -83,10 +83,16 @@ margin-left: 10%;
 
 .reviewSection {
 background-color: #e7eded;
+margin: 2%;
+padding: 1%;
 }
 
 .review {
 background-color: #dfe5e5;
+margin: 3%;
+margin-left: 7%;
+margin-right: 7%;
+padding: 1%;
 }
 
 
@@ -277,6 +283,31 @@ margin: auto;
   margin-top: auto;
 }
 
+.indexGrid{
+  grid-auto-rows: 400px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+  margin-top: -7%;
+  display: grid;
+  gap: 50px; /* Adds spacing between the grid items*/
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.indexRes{
+background-color: #e7eded; 
+margin: 0;
+padding: 10%;
+/* justify-content: center;
+text-align: center; */
+}
+
+.indexMenu{
+  background-color: #e7eded; 
+  margin: 0;
+  padding: 10%;
+}
+
 @media screen and (max-width: 768px) {
 .quiz-container{
 padding: 10px;
@@ -299,4 +330,21 @@ padding: 20px;
   width: 250px;
   height: auto;
   }
+
+.indexGrid{
+  row-gap: 0; /* Adds spacing between the grid items*/
+}
+  
+  .indexRes{
+    background-color: #e7eded; 
+    margin: auto;
+    padding: 10%;
+    }
+    
+    .indexMenu{
+      background-color: #e7eded; 
+      margin: auto;
+      padding: 10%;
+    }
+    
 }

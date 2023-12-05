@@ -1,3 +1,4 @@
+/* Below is all of the general stying */
 @font-face {
   font-family: "Parisienne" ;
   src: url("Assets/Parisienne.ttf") format('truetype');
@@ -12,129 +13,157 @@
   font-family: Open-Sans ;
 }
 
-
 section {
-text-align: center;
-padding: 0px;
+  text-align: center;
+  padding: 0px;
 }
 
 body {
-background-color: aliceblue;
-margin: 0px;
+  background-color: aliceblue;
+  margin: 0px;
 }
 
 nav {
-margin: 0px;
-padding-bottom: 1%;
-padding-top: .5%;
-text-align: center;
+  margin: 0px;
+  padding-bottom: 1%;
+  padding-top: .5%;
+  text-align: center;
+  padding-right: 5%;
 }
 
 a {
-text-decoration:dashed;
+  text-decoration:dashed;
+}
+
+a:link{
+  color: #0A384D;
+  font-weight: bold;
+}
+
+a:visited{
+  color: #0A384D;
+  font-weight: bold;
+}
+
+a:hover{
+  color: navy;
+  text-decoration: underline;
 }
 
 h1 {
-font-size: 400%;
-font-family: Parisienne;
+  font-size: 400%;
+  font-family: Parisienne;
 }
 
 p {
-color: #444;
-font-size: 150%;
+  color: #444;
+  font-size: 150%;
 }
 
 button {
-border: none;
-text-decoration: none;
-text-align: center;
-padding: 1%;
-font-size: 150%;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 1%;
+  font-size: 150%;
 }
 
 header {
-background-color: #e7eded;
-position:fixed;
-width: 100%;
+  background-color: #e7eded;
+  position:fixed;
+  width: 100%;
 }
 
 footer {
-background-color: #dadfdf;
-font-size: 50%;
-margin: 0px;
-padding: 1%;
+  background-color: #dadfdf;
+  font-size: 50%;
+  margin: 0px;
+  padding: 1%;
 }
 
 #restName{
   font-size: 250%;
   font-family: "Parisienne";
   text-align: center;
-  padding-right: 5%;
+  padding-right: 8%;
   margin-top: .5%;
   margin-bottom: -.5%;
   font-weight: bold;
   color: black;
 }
 
-.sectionInsideDiv{
-width: 80%;
-margin-left: 10%;
-}
-
-.reviewSection {
-background-color: #e7eded;
-margin: 2%;
-padding: 1%;
-}
-
-.review {
-background-color: #dfe5e5;
-margin: 3%;
-margin-left: 7%;
-margin-right: 7%;
-padding: 1%;
-}
-
-
-.slideText {
-margin: 0px;
-color: white;
-text-align: left;
-vertical-align: bottom;
-}
-
 .navLink {
-text-decoration: none;
-font-size: 1.5em;
-/* padding-top: 10%; */
-padding-right: 3%;
-text-align: center;
-color: black;
-font-weight: bold;
-}
-
-#slideDiv {
-position: relative;
-background-image: url('Assets/louis-hansel-UtcOhVC-3VU-unsplash.jpg');
-transition:background-image 0.5s linear;
-margin: 0px;
-width: 100%;
-background-size: cover;
-z-index: -1;
-padding-top: 35%;
-padding-bottom: 2%;
-padding-left: 2%;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding-right: 3%;
+  text-align: center;
+  color: black;
+  font-weight: bold;
 }
 
 #logo {
-width: 5em;
-height: 5em;
-padding-left: 3%;
-/* text-align: left; */
-padding-top: .7%;
-/* padding-bottom: .3%; */
-float: left;
-/* text-align: center; */
+  width: 5em;
+  height: 5em;
+  padding-left: 3%;
+  padding-top: .7%;
+  float: left;
+}
+
+/* This is all of our styling for the index page */
+.sectionInsideDiv{
+  width: 80%;
+  margin-left: 10%;
+}
+
+.reviewSection {
+  background-color: #e7eded; 
+}
+
+.review {
+  background-color: #dfe5e5;
+}
+
+/* FIND ME
+.slideText {
+  margin: 0px;
+  color: white;
+  text-align: left;
+  vertical-align: bottom;
+} */
+
+#ChefImage {
+  width: 50%;
+}
+
+#slideDiv {
+  position: relative;
+  background-image: url('Assets/louis-hansel-UtcOhVC-3VU-unsplash.jpg');
+  transition:background-image 0.5s linear;
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  z-index: -1;
+  padding-top: 35%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+}
+
+/* This is the styling for the menu page */
+.menuBackground{
+  background-color: #FFFCD9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.menuBorder{
+  background-color: #0A384D;
+  width: auto;
+  height: auto;
+  padding: 5%;
+  margin-top: auto;
 }
 
 #menuPageText{
@@ -162,90 +191,88 @@ float: left;
   height: 100%;
 }
 
+/* This is the stying for the quiz page */
 .quiz-body{
-background-color: #0A384D;
-width: auto;
-height: 768px;
-padding: 15px;
-margin-top: 20px;
+  background-color: #0A384D;
+  width: auto;
+  height: 768px;
+  padding: 15px;
+  margin-top: 20px;
 }
 
 .quiz-container{
-display: flex;
-flex-direction: column;
-font-size: x-large;
-justify-content: center;
-align-items: center;
-text-align: center;
-margin: auto;
-background-color: #FFFCD9;
-width: 80%;
-height: 80%;
+  display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  background-color: #FFFCD9;
+  width: 80%;
+  height: 80%;
 }
 
 .next{
-background-color: #0A384D;
-border: none;
-color: white;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-margin: 20px;
+  background-color: #0A384D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px;
 }
 
 .restart{
-background-color: #0A384D;
-border: none;
-color: white;
-padding: 15px 32px;
-margin: 20px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
+  background-color: #0A384D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .quiz-title{
-padding-top: 0;
+  padding-top: 0;
 }
 
 .quiz-result{
-display: flex;
-flex-direction: column;
-font-size: large;
-justify-content: center;
-align-items: center;
-text-align: center;
-margin: auto;
-background-color: #FFFCD9;
-width: 90%;
-height: 80%;
-margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  background-color: #FFFCD9;
+  width: 90%;
+  height: 80%;
+  margin-top: 35px;
 }
 
 .result img{
-height: 300px;
-width: 450px;
-}
-
-#ChefImage {
-width: 50%;
+  height: 300px;
+  width: 450px;
 }
 
 #quiz-photo{
-width: 400px;
-height: auto;
-padding: 10px;
+  width: 400px;
+  height: auto;
+  padding: 10px;
 }
 
-#revFormBack{
+/* This is the styling for the reservation page */
+#resFormBack{
   background-color: #0A384D;
   padding-top: 5%;
 }
 
-#revForm{
+#resForm{
   background-color:#FFFCD9;
   padding-top: .5%;
   padding-bottom: 2%;
@@ -266,85 +293,35 @@ padding: 10px;
   border-radius: 5%;
 }
 
-.menuBackground{
+#subButton:hover{
   background-color: #FFFCD9;
-  display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin: auto;
+  color: #0A384D;
+  border: 2px solid #0A384D;
+  margin: 18.5px;
 }
 
-.menuBorder{
-  background-color: #0A384D;
+/* The following is all of the styling for smaller screens*/
+@media screen and (max-width: 768px) {
+  .quiz-container{
+  padding: 10px;
   width: auto;
   height: auto;
-  padding: 5%;
-  margin-top: auto;
-}
-
-.indexGrid{
-  grid-auto-rows: 400px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
-  margin-top: -7%;
-  display: grid;
-  gap: 50px; /* Adds spacing between the grid items*/
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
-.indexRes{
-background-color: #e7eded; 
-margin: 0;
-padding: 10%;
-/* justify-content: center;
-text-align: center; */
-}
-
-.indexMenu{
-  background-color: #e7eded; 
-  margin: 0;
-  padding: 10%;
-}
-
-@media screen and (max-width: 768px) {
-.quiz-container{
-padding: 10px;
-width: auto;
-height: auto;
-margin-top: 20px;
-}
-
-.quiz-result img{
-width: 250px;
-height: auto;
-}
-.quiz-result{
-width: auto;
-height: auto;
-padding: 20px;
-}
-
-#quiz-photo{
-  width: 250px;
-  height: auto;
+  margin-top: 20px;
   }
 
-.indexGrid{
-  row-gap: 0; /* Adds spacing between the grid items*/
-}
-  
-  .indexRes{
-    background-color: #e7eded; 
-    margin: auto;
-    padding: 10%;
-    }
-    
-    .indexMenu{
-      background-color: #e7eded; 
-      margin: auto;
-      padding: 10%;
-    }
-    
+  .quiz-result img{
+    width: 250px;
+    height: auto;
+  }
+  .quiz-result{
+    width: auto;
+    height: auto;
+    padding: 20px;
+  }
+
+  #quiz-photo{
+    width: 250px;
+    height: auto;
+  }
+
 }

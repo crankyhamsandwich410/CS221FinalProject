@@ -21,13 +21,13 @@
         <div id="revFormBack">
             <br>
             <section id="revForm">
-                <form>
+                <form name="reservationForm" onsubmit="return validateForm()" method="post">
                     <h1 id="revTitle">Make your reservation here!</h1>
                     <p>Reservations may only be made from 5pm-8pm and are first come, first serve.</p>
-                    <p>Reservation Name<br><input type="TEXT" size="20" maxlength="50" /></p>
-                    <p>Number of Party Members<br><input type="TEXT" size="8" maxlength="2" /></p>
-                    <p>Email Address<br><input type="TEXT" size="30" maxlength="320" /></p>
-                    <p>Phone Number<br><input type="TEXT" size="15" maxlength="15" /></p>
+                    <p>Reservation Name<br><input type="TEXT" size="20" maxlength="50" name="fname"/></p>
+                    <p>Number of Party Members<br><input type="TEXT" size="8" maxlength="2" name="partyNum" /></p>
+                    <p>Email Address<br><input type="TEXT" size="30" maxlength="320" name="email" /></p>
+                    <p>Phone Number<br><input type="TEXT" size="15" maxlength="15" name="phoneNum" /></p>
                     <p>Select A Date & Time</p>
                     <input id="datefield" type='date'>
                     <select id="timeList" name="TIMES">
@@ -47,7 +47,7 @@
                     </select>
                     <br><br>
                     
-                    <input id="subButton" type="submit" value="Submit" />
+                    <input type="submit" value="Submit">
 
                     <script src="main.js"></script>
                     <script>resDate();</script>

@@ -342,10 +342,12 @@ text-align: center; */
     width: 250px;
     height: auto;
   }
-  .quiz-result{
+  
+   .quiz-result{
     width: auto;
     height: auto;
-    padding: 20px;
+    padding: 5px;
+    font-size:medium;
   }
 
   #quiz-photo{

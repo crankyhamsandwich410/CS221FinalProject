@@ -78,7 +78,7 @@ function validateForm() {
   }
 }
 
-//This segment of code allows for questions to be asked with the answers appearing with totals in order to return a result.
+//This segment of code allows for questions to be asked with the answers appearing with hidden totals in order to return a result.
 function createQuiz(){
   const questions = [
       {
@@ -133,7 +133,8 @@ function createQuiz(){
     let score = [];
     let selectedAnswersData = [];
     const totalQuestions =questions.length;
-    
+
+    //Reads in which buttons are being clicked by the surveyer.
     const container = document.querySelector('.quiz-container');
     const questionEl = document.querySelector('.question');
     const option1 = document.querySelector('.option1');
@@ -153,6 +154,7 @@ function createQuiz(){
         const option2Total = questions[index].answer2Total;
         const option3Total = questions[index].answer3Total;
         const option4Total = questions[index].answer4Total;
+        
         //Sends the question from the index to the HTML file.
         questionEl.innerHTML = `${index + 1}. ${question.question}`
         option1.setAttribute('data-total', `${option1Total}`);
@@ -173,14 +175,15 @@ function createQuiz(){
             alert('Please select your answer!');
             return;
         }
-
+    //Counts the total of the score in order to return a result.
         const answerScore = Number(selectedOption.nextElementSibling.getAttribute('data-total'));
 
         score.push(answerScore);
     
         selectedAnswersData.push()
         
-    
+    //Following code assigns each answer a section of numbers that is accounted for throughout the answers.
+    //This allows the ressults of the quiz to be customized to what the customer answered.
         const totalScore = score.reduce((total, currentNum) => total + currentNum);
 
         currentQuestion++;
@@ -227,6 +230,7 @@ function createQuiz(){
                 </div>`;
             return;
         }
+        //Calls the function to create a question
         generateQuestions(currentQuestion);
     }
     

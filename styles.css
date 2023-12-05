@@ -131,6 +131,31 @@ footer {
   vertical-align: bottom;
 } */
 
+.indexGrid{
+  grid-auto-rows: 400px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+  margin-top: -7%;
+  display: grid;
+  gap: 50px; /* Adds spacing between the grid items*/
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.indexRes{
+background-color: #e7eded; 
+margin: 0;
+padding: 10%;
+/* justify-content: center;
+text-align: center; */
+}
+
+.indexMenu{
+  background-color: #e7eded; 
+  margin: 0;
+  padding: 10%;
+}
+
 #ChefImage {
   width: 50%;
 }

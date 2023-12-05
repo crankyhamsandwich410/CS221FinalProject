@@ -116,11 +116,17 @@ footer {
 }
 
 .reviewSection {
-  background-color: #e7eded; 
+background-color: #e7eded;
+margin: 2%;
+padding: 1%;
 }
 
 .review {
-  background-color: #dfe5e5;
+background-color: #dfe5e5;
+margin: 3%;
+margin-left: 7%;
+margin-right: 7%;
+padding: 1%;
 }
 
 .indexGrid{
